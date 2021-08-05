@@ -7,93 +7,195 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Fiber Landing Page</title>
 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="text-gray-900">
+<body class="text-gray-900 font-inter">
    <main>
-      <nav class="bg-yellow-50">
-         Fiber
-         Community
-         Pricing
-         Features
-         Sign In
-         <div class="bg-indigo-700 text-gray-50">Sign Up</div>
+      <nav class="px-6 pt-8 pb-4 lg:px-36 lg:pt-10 lg:pb-8 bg-yellow-50">
+         </div>
+         <div class="flex justify-between items-center">
+            <span class="font-bold">Fiber</span>
+            <div class="hidden lg:inline-block">
+               <a href="#">Community</a>
+               <a href="#" class="mx-8">Pricing</a>
+               <a href="#">Features</a>
+            </div>
+
+            <div class="hidden lg:inline-block">
+               <span class="mr-8 font-bold">Sign In</span>
+               <div class="inline-block py-2 px-4 rounded bg-indigo-700 text-gray-50 font-bold">Sign Up</div>
+            </div>
+            <!--Mobile Menu-->
+            <div id="menu" class="hidden inline-block lg:hidden  bg-yellow-50">
+               <ul>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li class="block mr-8 font-bold">Sign In</li>
+               </ul>
+               <div class="block py-2 px-4 rounded bg-indigo-700 text-gray-50 font-bold">Sign Up</div>
+            </div>
+            <img id="burger" class="inline-block lg:hidden" src="images/Hamburger Menu.svg" alt="">
       </nav>
 
-      <div class="bg-yellow-50">
-         <h1>Create your portfolio in minutes.</h1>
-         <p>With Fiber, you can setup your own personal portfolio in minutes with dozesn of premade, beautiful
-            templates.</p>
-         <div>Start Free Trial</div>
-         <a href=" #">View Examples</a>
-         <div><img src="images/Checkmark.svg" alt="">No Credit Card Required
-            <img src="images/Checkmark.svg" alt="">10 Free Templates
+      <!-- Hero -->
+      <div class="px-6 lg:px-36 pb-20 lg:flex lg:flex-row lg:items-center bg-yellow-50">
+         <img class="lg:hidden" src="images/hero-Illustration.png" alt="">
+
+         <div>
+            <div class="hidden lg:block lg:flex">
+               <img class="transform scale-75" src="images/star.svg" alt="star">
+               <img class="transform scale-75" src="images/star.svg" alt="star">
+               <img class="transform scale-75" src="images/star.svg" alt="star">
+               <img class="transform scale-75" src="images/star.svg" alt="star">
+               <img class="transform scale-75" src="images/star.svg" alt="star">
+               <span class="ml-2 text-sm">Rated 4.8/5 (243) reviews</span>
+            </div>
+
+            <h1 class="mt-4 font-bold text-5xl lg:text-6xl">Create your portfolio in minutes.</h1>
+            <p class="my-4 text-xl">With Fiber, you can setup your own personal portfolio in minutes with dozens of
+               premade,
+               beautiful
+               templates.</p>
+
+            <div
+               class="block lg:inline-block text-center mr-4 mb-4 lg:mb-auto py-2 px-4 rounded bg-indigo-700 text-gray-50 font-bold">
+               Start
+               Free Trial
+            </div>
+            <a class="block lg:inline-block underline text-center font-bold text-indigo-700" href=" #">View Examples</a>
+
+            <div class="mt-4">
+               <div class="block lg:inline-block">
+                  <img class="inline-block transform scale-75" src="images/Checkmark.svg" alt="">No Credit Card
+                  Required
+               </div>
+
+               <div class="block lg:inline-block">
+                  <img class="inline-block transform scale-75" src="images/Checkmark.svg" alt="">10 Free
+                  Templates
+               </div>
+
+            </div>
          </div>
-         <img src="images/hero-Illustration.png" alt="">
+         <img class="hidden lg:inline lg:w-1/2 lg:h-1/2" src="images/hero-Illustration.png" alt="">
+
+
       </div>
 
-      <div>
-         <h3>Why Fiber?</h2>
-            <h2>A good portfolio means good employability.</h2>
-            <div>
-               <img src="images/time.svg" alt="">
-               <p>Build in minutes</p>
-               <p>With a selection of premade templates, you can build out a portfolio in less than 10 minutes</p>
-            </div>
-            <div>
-               <img src="images/code.svg" alt="">
-               <p>Add custom CSS</p>
-               <p>Customize your personal portfolio even more with the ability to add your own custom CSS styles</p>
-            </div>
-            <div>
-               <img src="images/allSizes.svg" alt="">
-               <p>Responsive</p>
-               <p>All Fiber templates are fully responsive to ensure the experience is seemless across all devices</p>
+      <!-- Description -->
+      <div class="px-6 lg:px-36">
+         <h3 class="mt-20 font-bold text-lg text-purple-700">Why Fiber?</h2>
+            <h2 class="lg:w-1/2 mt-4 font-bold text-3xl lg:text-4xl">A good portfolio means good employability.</h2>
+            <div class="flex flex-col lg:flex-row justify-between items-center my-10 text-gray-700">
+               <div>
+                  <img src="images/time.svg" alt="">
+                  <p class="my-4 font-bold">Build in minutes</p>
+                  <p>With a selection of premade templates, you can build out a portfolio in less than 10 minutes</p>
+               </div>
+               <div class="my-16 lg:my-auto">
+                  <img src="images/code.svg" alt="">
+                  <p class="my-4 font-bold">Add custom CSS</p>
+                  <p>Customize your personal portfolio even more with the ability to add your own custom CSS styles</p>
+               </div>
+               <div>
+                  <img src="images/allSizes.svg" alt="">
+                  <p class="my-4 font-bold">Responsive</p>
+                  <p>All Fiber templates are fully responsive to ensure the experience is seemless across all devices
+                  </p>
+               </div>
             </div>
 
-            <div>
-               <p>Diversity your portfolio</p>
-               <p>Create an even more impressive portfolio by creating case studies for your projects. Simply follow
-                  your step-by-step guide.</p>
-               <div>Start Free Trail</div>
-               <img src="images/Page Image.png" alt="">
+            <div
+               class="lg:flex lg:flex-row lg:items-center px-6 pt-6 lg:px-14 lg:pt-12 rounded-2xl bg-purple-700 text-white">
+               <div>
+                  <p class="font-bold text-3xl lg:text-4xl">Diversify your portfolio.</p>
+                  <p class="my-4 text-gray-200 text-lg">Create an even more impressive portfolio by creating case
+                     studies for
+                     your
+                     projects. Simply follow
+                     your step-by-step guide.</p>
+                  <div
+                     class="block lg:inline-block mb-8 lg:mb-auto py-2 px-4 rounded text-center bg-white text-indigo-700 font-bold">
+                     Start Free
+                     Trial</div>
+               </div>
+               <img class="lg:w-3/5" src="images/Page Image.png" alt="">
             </div>
 
             <!-- Testimonials -->
+            <div class="lg:flex lg:flex-row lg:justify-between my-24">
+               <div class=" border border-gray-400 rounded-md p-6 lg:p-8">
+                  <div class="flex items-center">
+                     <img class="mr-4" src="images/User Avatar.svg" alt="">
+                     <div class="leading-none">
+                        <p class="font-bold text-indigo-700">Sarah Andrews</p>
+                        <p>$100k in revenue</p>
+                     </div>
+                  </div>
+                  <p class="mt-4 mb-8">Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my
+                     portfolioi has
+                     attracted a lot of clients and made me more than $100k.</p>
+                  <div
+                     class="border border-gray-400 rounded-md px-6 lg:px-8 py-4 text-center font-bold text-indigo-700">
+                     View
+                     Sarah's portfolio</div>
+               </div>
 
-            <div>
-               <img src="images/User Avatar.svg" alt="">
-               <p>Sarah Andrews</p>
-               <p>$100k in revenue</p>
-               <p>Setting up my portfolio with Fiber took no more than 10 minutes. Since then, my portfolioi has
-                  attracted a lot of clients and made me more than $100k.</p>
-               <div>View Sarah's portfolio</div>
-            </div>
-            <div>
-               <img src="images/User Avatar 2.svg" alt="">
-               <p>Matthew Higgins</p>
-               <p>$20k in revenue</p>
-               <p>I have been getting A LOT of leads ever since I used Fiber's premade templates, now I just need to
-                  work on my case studies and I'll be ready to go!</p>
-               <div>View Matthews's portfolio</div>
-            </div>
-            <div>
-               <img src="images/User Avatar 32.svg" alt="">
-               <p>Janice Dave</p>
-               <p>$30k in revenue</p>
-               <p>I have only just started freelnacing this year and I have already made mroe than I ever made in my
-                  full-time job. The templates are just so amazing</p>
-               <div>View Janice's portfolio</div>
+               <div class="my-16 lg:my-0 lg:mx-16 border border-gray-400 rounded-md p-6 lg:p-8">
+                  <div class="flex items-center">
+                     <img class="mr-4" src="images/User Avatar 2.svg" alt="">
+                     <div class="leading-none">
+                        <p class="font-bold text-indigo-700">Matthew Higgins</p>
+                        <p>$20k in revenue</p>
+                     </div>
+                  </div>
+                  <p class="mt-4 mb-8">I have been getting A LOT of leads ever since I used Fiber's premade templates,
+                     now I just need to work on my case studies and I'll be ready to go!</p>
+                  <div
+                     class="border border-gray-400 rounded-md px-6 lg:px-8 py-4 text-center font-bold text-indigo-700">
+                     View
+                     Matthews's portfolio</div>
+               </div>
+
+               <div class=" border border-gray-400 rounded-md p-6 lg:p-8">
+                  <div class="flex items-center">
+                     <img class="mr-4" src="images/User Avatar 32.svg" alt="">
+                     <div class="leading-none">
+                        <p class="font-bold text-indigo-700">Janice Dave</p>
+                        <p>$30k in revenue</p>
+                     </div>
+                  </div>
+                  <p class="mt-4 mb-8">I have only just started freelnacing this year and I have already made mroe than
+                     I
+                     ever made in my
+                     full-time job. The templates are just so amazing</p>
+                  <div
+                     class="border border-gray-400 rounded-md px-6 lg:px-8 py-4 text-center font-bold text-indigo-700">
+                     View
+                     Janice's portfolio</div>
+               </div>
             </div>
       </div>
-      <footer class="bg-yellow-50">
-         <p>Fiber</p>
-         <p>With Fiber, you can setup your own personal portfolio in minutes with dozesn of premade, beautiful
-            templates.</p>
+
+      <footer
+         class="lg:flex lg:flex-wrap lg:justify-between px-6 lg:px-36 pt-16 pb-12 space-y-6 lg:space-y-0 bg-yellow-50 text-gray-600">
+         <div class="lg:w-1/3">
+            <p class="mb-2 font-bold text-black">Fiber</p>
+            <p>With Fiber, you can setup your own personal portfolio in minutes with dozens of
+               premade, beautiful
+               templates.</p>
+            <p class="mt-8">Made with &#9829; in the USA</p>
+         </div>
+
          <div>
-            <p>Sitemap</p>
-            <ul>
+            <p class="mb-2 font-bold text-black">Sitemap</p>
+            <ul class="space-y-1 lg:space-y-2">
                <li>Homepage</li>
                <li>Pricing</li>
                <li>Testimonials</li>
@@ -102,8 +204,8 @@
          </div>
 
          <div>
-            <p>Resources</p>
-            <ul>
+            <p class="mb-2 font-bold text-black">Resources</p>
+            <ul class="space-y-1 lg:space-y-2">
                <li>Support</li>
                <li>Contact</li>
                <li>FAQ</li>
@@ -111,8 +213,8 @@
          </div>
 
          <div>
-            <p>Company</p>
-            <ul>
+            <p class="mb-2 font-bold text-black">Company</p>
+            <ul class="space-y-1 lg:space-y-2">
                <li>About</li>
                <li>Customers</li>
                <li>Blog</li>
@@ -120,8 +222,8 @@
          </div>
 
          <div>
-            <p>Portfolio</p>
-            <ul>
+            <p class="mb-2 font-bold text-black">Portfolio</p>
+            <ul class="space-y-2">
                <li>Sarah Andrews</li>
                <li>Matthew Higgins</li>
                <li>Janice Dave</li>
@@ -133,5 +235,25 @@
    </main>
 
 </body>
+
+<script>
+   const burger = document.getElementById("burger");
+   const menu = document.getElementById("menu");
+   let status = false;
+   //false == closed
+   //true == open
+
+   const toggle = () => {
+      if (!status) {
+         menu.classList.remove("hidden");
+         status = true;
+
+      } else {
+         menu.classList.add("hidden");
+         status = false;
+      }
+   };
+   burger.addEventListener('click', toggle);
+</script>
 
 </html>
